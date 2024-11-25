@@ -3,7 +3,7 @@
     z-index:9999999999 ! important;
 }
 #introBanner .modal-content{
-    background-image: url('/community/assets/images/wikimint-community.webp') ! important; 
+    background-image: url('/assets/images/wikimint-community.webp') ! important; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,4 +44,7 @@ a{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1055;
+}
+.m-width{
+    max-width:800px ! important;
 }

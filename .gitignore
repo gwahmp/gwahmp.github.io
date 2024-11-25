@@ -54,3 +54,9 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+#others
+b.bat
+backup.bat
+*.bat
+*.sh
