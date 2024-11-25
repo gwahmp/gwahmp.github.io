@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <link rel="stylesheet" href="/community/assets/css/style.css?v={{site.data.config.v}}">
+  <link rel="stylesheet" href="/community/assets/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="/community/assets/lib/bootstrap-icons.min.css">
+  <meta name="google-signin-client_id" content="69794757092-emuuqmul46p24bre1qsim9veuf5hdnoh.apps.googleusercontent.com">
+  <script src="/community/assets/lib/jquery.min.js"></script>
+  <script src="/community/assets/js/wmlib.js?v={{site.data.config.v}}"></script>
+</head>
+<body>
+{% include header.html %}
+<main>
+  {{ content }}
+</main>
+
+{% include footer.html %}
+
+
+
+<div class="modal" id="introBanner" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="card mt-5 mx-auto justify-content-center align-items-center d-flex" style="max-width: 600px;">
+                <div class="card-body p-lg-5 p-4 text-center">
+                <div class="guest-only">  
+                    <img class="mb-4" src="/community/assets/images/wikimint-logo.webp"/>  
+                    <h1>Wikimint Community</h1><hr/>
+                    <p>Wikimint Community is a space for users to share their voice, build a public profile, and connect with others. Join a vibrant network, post status updates, and engage with like-minded people across diverse interests.</p>
+                <center>
+                    <div id="my-signin2" class="mx-auto">
+                        <button class="btn btn-primary gsignin-ph btn-loader">
+                          <span class="loader">
+                            <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                          <span role="status">Please wait...</span>
+                        </span>
+                          <span class="default-status">Sign in with Google</span>
+                        </button>
+                    </div>
+                </center>   
+                </div> 
+                <div class="member-only">
+                    <span class="d-block display-6 lead">Welcome</span>
+                    <p class="display-5 lead fw-normal fs-3 m-name my-3 text-success"></p>
+                    <p>
+                    <a href="/community/user"><button class="btn btn-light border-secondary">Explore the Community</button></a>
+                    </p>
+                    <a class="m-link me-3" href="#profile">My profile</a>
+                    <a class="/community/dashboard" href="/community/dashboard">Dashboard</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  $(document).ready(function() {
+    $('#introBanner').modal('show');
+  });
+</script>
+
+</body>
+</html>

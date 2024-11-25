@@ -1,0 +1,47 @@
+
+#introBanner{
+    z-index:9999999999 ! important;
+}
+#introBanner .modal-content{
+    background-image: url('/community/assets/images/wikimint-community.webp') ! important; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;      
+}
+header{
+    z-index:999 ! important;
+}
+.sticky-top{
+    top:60px;
+}
+header.sticky-top{
+    top:0 ! important;
+}
+*:focus,
+*:active{
+    outline:none ! important;
+    border:none ! important;
+}
+.member-only,
+.guest-only,
+.register-btn,
+.register-card,
+.section404,
+.profile-created,
+.author-only,
+.loader{
+    display:none;
+}
+a{
+    text-decoration:none ! important;
+}
+  /* Center the toast in the middle of the viewport */
+  #wmToast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1055;
+}

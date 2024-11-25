@@ -1,0 +1,72 @@
+{% assign url_parts = page.url | split: '/' %}
+{% assign uid = url_parts | last %}
+<form id="userDataForm" class="mt-3 author-only" method="post">
+
+
+    <div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="editProfileModalLabel">Edit Profile</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <input type="hidden" class="form-control" id="userId" name="u" value="{{page.u}}" required>
+              <input type="hidden" id="dp" name="dp" value="{{page.dp}}">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="n" value="{{page.n}}" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="title">Title</label>
+              <input type="text" class="form-control" id="title" name="t" value="{{page.t}}" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="website">Website</label>
+              <input type="url" class="form-control" id="website" name="w" value="{{page.w}}">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="description">Description</label>
+              <textarea class="form-control" rows="6" max="1000" id="description" name="d">{{ content | strip_html }}
+            </textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="facebook">Facebook URL</label>
+              <input type="url" class="form-control" id="facebook" name="f" value="{{page.f}}">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="twitter">Twitter URL</label>
+              <input type="url" class="form-control" id="twitter" name="x" value="{{page.x}}">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="linkedin">LinkedIn URL</label>
+              <input type="url" class="form-control" id="linkedin" name="l" value="{{page.l}}">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="instagram">Instagram URL</label>
+              <input type="url" class="form-control" id="instagram" name="i" value="{{page.i}}">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="youtube">YouTube URL</label>
+              <input type="url" class="form-control" id="youtube" name="y" value="{{page.y}}">
+            </div>
+          
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary">
+              <span class="loader">
+                <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+              <span role="status">Processing...</span>
+            </span>
+              <span class="default-status">Save</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </form>

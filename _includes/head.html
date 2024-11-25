@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="site-version" content="{{site.data.config.v}}">
+
+  <meta name="generator" content="WordPress 6.3">
+  
+  
+{% if page.n && page.t %}
+<title>{{ page.n }} | {{ page.t }} - Wikimint Community</title>
+{% else if page.title %}
+<title>{{ page.title }} </title>
+{% endif %}
+{% assign meta_description = "" %}
+{% if page.excerpt %}
+  {% assign meta_description = page.excerpt | strip_html | truncate: 160 | escape %}
+{% elsif page.content %}
+  {% assign meta_description = page.content | strip_html | truncate: 160 | escape %}
+{% elsif page.description %}
+  {% assign meta_description = page.description | strip_html | truncate: 160 | escape %}
+{% endif %}
+<meta name="description" content="{{ meta_description }}">

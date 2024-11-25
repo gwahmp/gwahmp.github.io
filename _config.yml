@@ -1,0 +1,35 @@
+# Site settings
+title: App | Wikimint
+description: >- 
+  Wikimint App - Leaarn new things everyday
+
+url: "https://app.wikimint.com" 
+baseurl: "" 
+permalink: pretty
+
+
+include:
+  - user
+
+include_homepage: true
+
+collections:
+  user:
+    output: true
+    permalink: /user/:path/
+
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+
+
+exclude:
+  - _admin
+  - README.md
+  - node_modules
+  - vendor

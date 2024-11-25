@@ -1,0 +1,56 @@
+# Jekyll specific
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.jekyll-asset-cache
+.jekyll-cache
+.jekyll-metadata
+.jekyll-asset-cache/
+
+# Gem specific
+.bundle/
+vendor/bundle/
+vendor/cache/
+vendor/gems/
+vendor/ruby/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Temporary files and caches
+.DS_Store
+Thumbs.db
+*.swp
+.sass-cache/
+*.sass-cache
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# System files
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Temp files for macOS
+**/._*
+
+# Config for editors (example)
+*.sublime-project
+*.sublime-workspace
+.idea/
+.vscode/
+
+# Jekyll build artifacts and cache files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata

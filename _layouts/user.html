@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<div class="container mt-5">
+    <div class="row">
+                  <!-- Sidebar -->
+                  <aside class="col-md-4 col-lg-4">
+                    <div class="pe-lg-4">
+                      <span class="text-center">
+                        
+                        <img src="{% if page.dp %}{{ page.dp | replace: 's96', 's200' }}{% else %}/community/assets/images/dp.webp{% endif %}" class="mb-3 d-block mx-auto" alt="Profile Picture" width="100%" height="auto">
+                        {% if page.n %}
+                        <h2 class="mb-1 display-6 fs-5">{{ page.n }}</h2>
+                        {% endif %}
+                        {% if page.t %}
+                        <p class="text-muted">{{ page.t }}</p>
+                        {% endif %}
+                        {% if page.w %}
+                        <a href="{{ page.w }}" class="btn w-100 btn-outline-primary" target="_blank">Visit Website</a>
+                        {% endif %}
+                      </span>
+                      <button type="button" class="btn btn-primary author-only w-100 mt-2" data-bs-toggle="modal" data-bs-target="#editProfileModal" style="display:none;">
+                        Edit Profile
+                      </button>
+                      <button type="button" id="deleteProfile" class="btn btn-outline-danger author-only w-100 mt-2"  style="display:none;">
+                        Delete Profile
+                      </button>
+      <div class="d-flex justify-content-center gap-3 my-3">
+{% if page.l and page.l.size >= 3 %}
+<a href="{{ page.l }}" class="text-secondary" target="_blank" aria-label="LinkedIn profile of {{ page.n }}">
+  <i class="bi bi-linkedin fs-3"></i>
+        </a>
+        {% endif %}
+        {% if page.f and page.f.size >= 3 %}
+        <a href="{{ page.f }}" class="text-secondary" target="_blank" aria-label="Facebook profile of {{ page.n }}">
+          <i class="bi bi-facebook fs-3"></i>
+        </a>
+        {% endif %}
+        {% if page.x and page.x.size >= 3 %}
+        <a href="{{ page.x }}" class="text-secondary" target="_blank" aria-label="X (Twitter) profile of {{ page.n }}">
+          <i class="bi bi-twitter fs-3"></i>
+        </a>
+        {% endif %}
+        {% if page.i and page.i.size >= 3 %}
+        <a href="{{ page.i }}" class="text-secondary" target="_blank" aria-label="Instagram profile of {{ page.n }}">
+          <i class="bi bi-instagram fs-3"></i>
+        </a>
+        {% endif %}
+        {% if page.y and page.y.size >= 3 %}
+        <a href="{{ page.y }}" class="text-secondary" target="_blank" aria-label="YouTube Channel of {{ page.n }}">
+          <i class="bi bi-youtube fs-3"></i>
+        </a>
+        {% endif %}
+      </div>
+      
+                  </div>
+                  </aside>
+      <!-- Main Content -->
+      <main class="col-md-8 col-lg-8">
+        
+            <h1>About {{ page.n }}</h1>
+            <hr/><p>{{ content }}</p>
+            {% include editprofile.html %}
+      </main>
+        
+    </div>
+  </div>
+
+  {% assign ver = site.data.config.v %}
+  <script src="/community/assets/js/wmreg.js?v={{site.data.config.v}}"></script>

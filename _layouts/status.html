@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="container my-5">
+    <div id="activities">Loading recent activities...</div>
+  </div>
+  
+  <script>
+    // Mapping GitHub event types to user-friendly actions
+    const eventMessages = {
+      PushEvent: "made a code update",
+      PullRequestEvent: "submitted a pull request",
+      IssuesEvent: "opened or closed an issue",
+      ForkEvent: "forked the repository",
+      WatchEvent: "starred the repository",
+      CreateEvent: "created a new branch or tag",
+      DeleteEvent: "deleted a branch or tag",
+      ReleaseEvent: "published a release",
+      MemberEvent: "added a collaborator",
+      IssueCommentEvent: "commented on an issue",
+      PullRequestReviewCommentEvent: "reviewed a pull request",
+    };
+  
+    fetch('https://api.github.com/repos/gwahmp/community/events')
+      .then(response => response.json())
+      .then(data => {
+        const activities = data
+          .map(event => {
+            const action = eventMessages[event.type] || "performed an action"; // Default fallback
+            return `<li>${event.actor.login} ${action}</li>`;
+          })
+          .join('');
+        document.getElementById('activities').innerHTML = `<ul>${activities}</ul>`;
+      })
+      .catch(err => console.error('Error fetching data:', err));
+  </script>
+  

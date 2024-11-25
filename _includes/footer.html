@@ -1,0 +1,54 @@
+<!-- Footer -->
+<footer class="bg-light text-dark mt-5 py-4">
+    <div class="container">
+      <div class="mt-3">
+        <p>&copy; 2024 Wikimint Community. All rights reserved.</p><hr/>
+        <a target="_blank" class="me-3" href="https://www.wikimint.com/p/about.html">About</a>
+        <a target="_blank" class="me-3" href="https://www.wikimint.com/p/contact.html">Contact</a>
+        <a target="_blank" class="me-3" href="https://www.wikimint.com/p/legal.html#terms">Terms</a>
+        <a target="_blank" class="me-3" href="https://www.wikimint.com/p/legal.html#privacy">Privacy</a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="signinLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="signinLabel">Join the community</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <center>
+            <div id="my-signin2">
+              <button class="btn btn-primary gsignin-ph">
+                <span class="loader">
+                  <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                <span role="status">Please wait...</span>
+              </span>
+                <span class="default-status">Sign in with Google</span>
+              </button>
+            </div>
+            <p class="mt-3">Authenticate with Google to simplify your login/registration process.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  <script src="/community/assets/lib/bootstrap.bundle.min.js"></script>
+  
+  <script src="/community/assets/js/wmlog.js?v={{site.data.config.v}}"></script>
+
+    <!-- Toast Component -->
+    <div id="wmToast" class="toast text-bg-success" data-bs-autohide="false">
+        <div class="toast-header">
+            <strong class="toast-title me-auto">Toast Header</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+            <p class="toast-content">Some text inside the toast body</p>
+        </div>
+    </div>
