@@ -56,7 +56,5 @@ _site/
 .jekyll-metadata
 
 #others
-b.bat
-backup.bat
 *.bat
 *.sh
