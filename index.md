@@ -8,9 +8,9 @@ description: Discover a wide range of free online tools, utilities, and web apps
         <h1 class="display-3 fw-thin">Free Productivity Platform <span class="d-block fw-normal lead fs-3 my-3">For Online Tools, Utilities, Community Portal and more.</span></h1><hr/>
         <p class="lead">Access a wide range of free online tools and utilities designed to simplify your tasks and save time. Enhance your workflow with web-based productivity tools crafted for efficiency and ease of use. Join a thriving community portal to share insights, collaborate, and connect with like-minded individuals.
 Discover everything you need to boost productivity and enjoy seamless online utilities — all in one place!</p>
-        <div class="d-flex justify-content-center gap-3 mt-4">
-            <a href="#tools" class="btn btn-light btn-lg px-5">Explore Tools</a>
-            <a href="/community" class="btn btn-outline-light btn-lg px-5">Join Community</a>
+        <div class="mt-4">
+            <a href="#tools" class="btn btn-light btn-lg px-5 mb-2 me-3 col-12 col-md-auto">Explore Tools</a>
+            <a href="/community" class="btn btn-outline-light btn-lg px-5 mb-2  col-12 col-md-auto">Join Community</a>
         </div>
     </div>
 </section>
