@@ -9,7 +9,7 @@ description: Discover a wide range of free online tools, utilities, and web apps
         <p class="lead">Access a wide range of free online tools and utilities designed to simplify your tasks and save time. Enhance your workflow with web-based productivity tools crafted for efficiency and ease of use. Join a thriving community portal to share insights, collaborate, and connect with like-minded individuals.
 Discover everything you need to boost productivity and enjoy seamless online utilities — all in one place!</p>
         <div class="mt-4">
-            <a href="#tools" class="btn btn-light btn-lg px-5 mb-2 me-3 col-12 col-md-auto">Explore Tools</a>
+            <a href="/tools" class="btn btn-light btn-lg px-5 mb-2 me-3 col-12 col-md-auto">Explore Tools</a>
             <a href="/community" class="btn btn-outline-light btn-lg px-5 mb-2  col-12 col-md-auto">Join Community</a>
         </div>
     </div>
@@ -29,7 +29,7 @@ Discover everything you need to boost productivity and enjoy seamless online uti
                     <div class="card-body">
                         <h5 class="card-title">SEO Tools</h5>
                         <p class="card-text">Analyze and improve your website's SEO with our free tools like keyword analyzers and backlink checkers.</p>
-                        <a href="#seo" class="btn btn-primary">Explore SEO Tools</a>
+                        <a href="/tools#seo" class="btn btn-primary">Explore SEO Tools</a>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@ Discover everything you need to boost productivity and enjoy seamless online uti
                     <div class="card-body">
                         <h5 class="card-title">Utility Tools</h5>
                         <p class="card-text">Access tools like calculators, unit converters, and file format converters for everyday needs.</p>
-                        <a href="#utility" class="btn btn-primary">Explore Utility Tools</a>
+                        <a href="/tools#utility" class="btn btn-primary">Explore Utility Tools</a>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@ Discover everything you need to boost productivity and enjoy seamless online uti
                     <div class="card-body">
                         <h5 class="card-title">Development Tools</h5>
                         <p class="card-text">Enhance your development workflow with tools like JSON formatters, API testers, and more.</p>
-                        <a href="#development" class="btn btn-primary">Explore Development Tools</a>
+                        <a href="/tools#development" class="btn btn-primary">Explore Development Tools</a>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@ Discover everything you need to boost productivity and enjoy seamless online uti
         <p>Join a thriving online community portal to network, share insights, and engage in meaningful collaborations. Explore forums, discussions, and resources designed to connect like-minded individuals and grow together!</p>
         </div>
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-3">
                 <img src="/assets/images/wikimint-community.webp" alt="Connect with a vibrant online community where ideas thrive, collaborations grow, and meaningful discussions happen. Join for free and be part of something extraordinary!" class="img-fluid rounded">
             </div>
             <div class="col-md-6">
