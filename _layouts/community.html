@@ -12,13 +12,43 @@
 <body>
 {% include header.html %}
 <main>
-  {{ content }}
+  <section class="bg-light border-bottom m-0 py-5">
+  <div class="card-body p-lg-5 p-5 text-center mx-auto bg-white shadow" style="max-width:700px;">
+    <div class="guest-only">  
+        <img class="mb-4" src="/assets/images/wikimint-logo.webp"/>  
+        <h1>Wikimint Community</h1><hr/>
+        <p>Wikimint Community is a space for users to share their voice, build a public profile, and connect with others. Join a vibrant network, post status updates, and engage with like-minded people across diverse interests.</p>
+    <center>
+        <div id="my-signin2" class="mx-auto">
+            <button class="btn btn-primary gsignin-ph btn-loader">
+              <span class="loader">
+                <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+              <span role="status">Please wait...</span>
+            </span>
+              <span class="default-status">Sign in with Google</span>
+            </button>
+        </div>
+    </center>   
+    </div> 
+    <div class="member-only">
+        <span class="d-block display-6 lead">Welcome</span>
+        <p class="display-5 lead fw-normal fs-3 m-name my-3 text-success"></p>
+        <p>
+        <a href="/community/user"><button class="btn btn-light border-secondary">Explore the Community</button></a>
+        </p>
+        <a class="m-link me-3" href="#profile">My profile</a>
+        <a class="/community/dashboard" href="/community/dashboard">Dashboard</a>
+    </div>
+</div>
+</div>
+</section>
+
 </main>
 
 {% include footer.html %}
 
 
-
+<!-- 
 <div class="modal" id="introBanner" tabindex="-1">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
@@ -55,7 +85,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <script>
   $(document).ready(function() {
     $('#introBanner').modal('show');

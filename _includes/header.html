@@ -2,11 +2,33 @@
 <header class="bg-white text-dark border-bottom sticky-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
-       
-       
-          <a class="navbar-brand" href="/">
-            <img width="175" height="33" alt="Wikimint Community" src="/assets/images/wikimint-logo.webp"/>
-        </a>
+ 
+        {% assign first_part = page.url | split: '/' | slice: 1 | first %}
+        
+        {% if first_part == "community" %}
+
+        <a class="navbar-brand d-flex align-items-center me-3" href="/community">
+          <img width="50" height="auto" alt="Wikimint Community" src="/assets/images/wikimint-icon.webp"/>
+          <span class="ms-2">Community</span>
+      </a>
+
+        {% elsif first_part == "tools" %}
+
+        <a class="navbar-brand d-flex align-items-center" href="/tools">
+          <img width="50" height="auto" alt="Wikimint Community" src="/assets/images/wikimint-icon.webp"/>
+          <span class="ms-2">Tools</span>
+              </a>
+
+        {% else %}
+
+        <a class="navbar-brand" href="/">
+          <img width="175" height="33" alt="Wikimint Community" src="/assets/images/wikimint-logo.webp"/>
+      </a>
+
+        {% endif %}
+        
+
+      
 
           <span class="d-flex align-items-center ms-auto float-end  d-md-none">
             <span class="nav-item me-3 guest-only">
@@ -33,16 +55,43 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Explore
               </a>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/">App Platform</a></li><hr class="mt-2"/>
                 <li><a class="dropdown-item" target="_blank" href="https://www.wikimint.com">Wikimint</a></li>
                 <li><a class="dropdown-item" target="_blank" href="https://developer.wikimint.com">Developer</a></li>
-                <li><a class="dropdown-item" href="/">Web Apps</a></li>
                 <li><a class="dropdown-item" href="/tools">Online Tools</a></li>
                 <li><a class="dropdown-item" href="/community">Community</a></li>
+              </ul>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tools
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/tools">Explore All Tools</a></li><hr class="mt-2"/>
+                <li><a class="dropdown-item" href="/tools#web-development">Web & Development</a></li>
+                <li><a class="dropdown-item" href="/tools#seo-content">SEO & Content</a></li>
+                <li><a class="dropdown-item" href="/tools#security-privacy">Security & Privacy</a></li>
+                <li><a class="dropdown-item" href="/tools#general-utilities">General Utilities</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Community
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/community">Community</a></li><hr class="mt-2"/>
+                <li><a class="dropdown-item" href="/community/user">All members</a></li>
+                <li class="guest-only"><a class="dropdown-item" href="/community">Join now</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -50,15 +99,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" target="_blank" href="https://www.wikimint.com/p/contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Community
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/community/user">All members</a></li>
-                <li class="guest-only"><a class="dropdown-item" href="/community">Join now</a></li>
-              </ul>
             </li>
             <li class="nav-item guest-only">
               <a class="nav-link" href="/community">Join now</a>
