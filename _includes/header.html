@@ -3,30 +3,28 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg">
  
-        {% assign first_part = page.url | split: '/' | slice: 1 | first %}
-        
-        {% if first_part == "community" %}
+        {% if page.url contains '/community' %}
 
-        <a class="navbar-brand d-flex align-items-center me-3" href="/community">
-          <img width="50" height="auto" alt="Wikimint Community" src="/assets/images/wikimint-icon.webp"/>
-          <span class="ms-2">Community</span>
-      </a>
+<a class="navbar-brand d-flex align-items-center me-3" href="/community">
+  <img width="50" height="auto" alt="Wikimint Community" src="/assets/images/wikimint-icon.webp"/>
+  <span class="ms-2">Community</span>
+</a>
 
-        {% elsif first_part == "tools" %}
+{% elsif page.url contains '/tools' %}
 
-        <a class="navbar-brand d-flex align-items-center" href="/tools">
-          <img width="50" height="auto" alt="Wikimint Community" src="/assets/images/wikimint-icon.webp"/>
-          <span class="ms-2">Tools</span>
-              </a>
+<a class="navbar-brand d-flex align-items-center" href="/tools">
+  <img width="50" height="auto" alt="Wikimint Tools" src="/assets/images/wikimint-icon.webp"/>
+  <span class="ms-2">Tools</span>
+</a>
 
-        {% else %}
+{% else %}
 
-        <a class="navbar-brand" href="/">
-          <img width="175" height="33" alt="Wikimint Community" src="/assets/images/wikimint-logo.webp"/>
-      </a>
+<a class="navbar-brand" href="/">
+  <img width="175" height="33" alt="Wikimint Logo" src="/assets/images/wikimint-logo.webp"/>
+</a>
 
-        {% endif %}
-        
+{% endif %}
+
 
       
 
