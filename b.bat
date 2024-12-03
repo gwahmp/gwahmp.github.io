@@ -20,7 +20,10 @@ echo Build completed successfully!
 
 rem Run the npm javascript-obfuscator command
 echo Obfuscating JavaScript files...
-javascript-obfuscator "%BUILD_DIR%\assets\js" --output "%BUILD_DIR%\assets\js" --compact true --control-flow-flattening true --self-defending true --dead-code-injection true
+REM javascript-obfuscator "%BUILD_DIR%\assets\js" --output "%BUILD_DIR%\assets\js" --compact true --control-flow-flattening true --self-defending true --dead-code-injection true
+
+javascript-obfuscator "%BUILD_DIR%\assets\js" --output "%BUILD_DIR%\assets\js" --compact true --control-flow-flattening true --dead-code-injection true --string-array true --string-array-threshold 0.75 --string-array-encoding rc4 --disable-console-output true
+
 
 rem Check if the obfuscation was successful
 if %errorlevel% neq 0 (
