@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Proxy Browser</title>
+    <link rel="stylesheet" href="/browser/assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navBar">
+        <button onclick="goBack()">&#8592; Back</button>
+        <button onclick="goForward()">Forward &#8594;</button>
+        <form id="urlForm" onsubmit="handleFormSubmit(event)">
+            <input
+                id="addressBar"
+                type="url"
+                placeholder="Enter URL"
+                required
+                pattern="https?://.+"
+            />
+            <button type="submit" id="goButton">Go</button>
+        </form>
+    </div>
+
+    <!-- Content (iframe for Proxy Content) -->
+    <div id="content">
+        <iframe id="proxyIframe" width="100%" height="600px" style="border:none;"></iframe>
+    </div>
+
+    <script src="/browser/assets/js/script.js"></script>
+</body>
+</html>
