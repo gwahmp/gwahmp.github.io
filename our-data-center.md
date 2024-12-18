@@ -1,5 +1,6 @@
 ---
 layout: default
+noindex: true
 ---
 <div class="container mt-5">
     <div class="text-center">
