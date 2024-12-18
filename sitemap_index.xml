@@ -5,8 +5,10 @@ layout: none
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>{{ site.url }}/community/sitemap.xml</loc>
+    <lastmod>2024-12-18</lastmod>
   </sitemap>
   <sitemap>
     <loc>{{ site.url }}/tools/sitemap.xml</loc>
+    <lastmod>2024-12-18</lastmod>
   </sitemap>
 </sitemapindex>
