@@ -12,7 +12,7 @@ noindex: false
 Discover everything you need to boost productivity and enjoy seamless online utilities — all in one place!</p>
         <div class="mt-4">
             <a href="/tools" class="btn btn-light btn-lg px-5 mb-2 me-3 col-12 col-md-auto">Explore Tools</a>
-            <a href="/community" class="btn btn-outline-light btn-lg px-5 mb-2  col-12 col-md-auto">Join Community</a>
+            <!-- <a href="/community" class="btn btn-outline-light btn-lg px-5 mb-2  col-12 col-md-auto">Join Community</a> -->
         </div>
     </div>
 </section>
@@ -58,7 +58,7 @@ Discover everything you need to boost productivity and enjoy seamless online uti
 </section>
 
 <!-- Community Section -->
-<section class="py-5">
+<!-- <section class="py-5">
     <div class="container">
     <div class="m-width text-center mx-auto pb-5">
         <h2 class="text-center mb-4">Join Our Community</h2><hr/>
@@ -79,4 +79,4 @@ Discover everything you need to boost productivity and enjoy seamless online uti
             </div>
         </div>
     </div>
-</section>
+</section> -->
