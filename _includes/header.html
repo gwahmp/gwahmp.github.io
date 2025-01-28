@@ -13,6 +13,11 @@
           <img width="50" height="auto" alt="Wikimint Tools" src="/assets/images/wikimint-icon.webp"/>
           <span class="ms-2">Tools</span>
         </a>
+        {% elsif site.data.config.name == 'glossary' %}
+        <a class="navbar-brand d-flex align-items-center" href="/glossary">
+          <img width="50" height="auto" alt="Wikimint Glossary" src="/assets/images/wikimint-icon.webp"/>
+          <span class="ms-2">Glossary</span>
+        </a>
       {% else %}
         <a class="navbar-brand" href="/">
           <img width="175" height="33" alt="Wikimint Logo" src="/assets/images/wikimint-logo.webp"/>
