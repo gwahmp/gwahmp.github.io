@@ -8,7 +8,7 @@ set "BUILD_DIR=E:\dev-bkp\github\_react\app-home-remote-prod"
 echo Processing final build...
 
 rem Use robocopy to copy the source directory to the build directory, excluding specified directories
-robocopy "%SOURCE_DIR%" "%BUILD_DIR%" /E /XD "_site" ".jekyll-cache" "tools" "browser" "community" "node_modules" "user" "b" "backup"
+robocopy "%SOURCE_DIR%" "%BUILD_DIR%" /E /XD "_site" ".jekyll-cache" "tools" "glossary" "browser" "community" "node_modules" "user" "b" "backup"
 
 rem Check if robocopy was successful
 if %errorlevel% geq 8 (
