@@ -1,0 +1,26 @@
+remote_theme: gwahmp/gwahmp.github.io
+markdown: kramdown
+
+# Site settings
+title: App | Glossary
+description: >- 
+  Wikimint Glossary
+
+url: "https://app.wikimint.com/glossary" 
+baseurl: "" 
+permalink: /:g/
+
+include_homepage: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+exclude:
+  - _admin
+  - README.md
+  - node_modules
+  - vendor

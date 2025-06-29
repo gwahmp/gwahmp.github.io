@@ -1,0 +1,19 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign all_pages = site.pages | concat: site.static_files %}
+  {% for page in all_pages %}
+    {% if page.path contains ".md" and page.url and page.noindex != true %}
+      <url>
+        <loc>{{ site.url }}{{ page.url | remove: ".md" | remove: ".html" | escape }}</loc>
+<lastmod>{{ page.last_modified_at | default: page.date | default: "2024-12-18" | date: "%Y-%m-%d" }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+      </url>
+    {% endif %}
+  {% endfor %}
+
+  
+</urlset>

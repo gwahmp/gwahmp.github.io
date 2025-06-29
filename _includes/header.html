@@ -18,6 +18,11 @@
           <img width="50" height="auto" alt="Wikimint Glossary" src="/assets/images/wikimint-icon.webp"/>
           <span class="ms-2">Glossary</span>
         </a>
+        {% elsif site.data.config.name == 'wmt' %}
+        <a class="navbar-brand d-flex align-items-center" href="/wmt">
+          <img width="50" height="auto" alt="Wikimint (WMT)" src="/assets/images/wikimint-icon.webp"/>
+          <span class="ms-2">WMT</span>
+        </a>        
       {% else %}
         <a class="navbar-brand" href="/">
           <img width="175" height="33" alt="Wikimint Logo" src="/assets/images/wikimint-logo.webp"/>

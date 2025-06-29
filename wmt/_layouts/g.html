@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="container pt-4 pb-3 glossary">
+<div class="row">
+    <div class="col-md-8 mb-3">
+            <h1>{{ page.h1 | markdownify }}</h1><hr/>
+            {{ page.content | markdownify }}
+    </div>
+    <div class="col-md-4"></div>
+</div>
+</div>
+<style>
+    .glossary h2{
+    color: #336699 ! important;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 15px;
+    margin-bottom:15px;
+}
+</style>
