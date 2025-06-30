@@ -46,6 +46,8 @@ noindex: false
       <div class="alert alert-warning mt-5 p-5" role="alert" id="disclaimer">
       <h3>WMT Token Disclaimer</h3><hr/>
 <p>Wikimint (WMT) is an experimental utility token developed by <a href="https://sk.wikimint.com" target="_blank">Selvakumaran Krishnan</a> for exploring blockchain-based community engagement technologies. It was primarily built for primarily for rewarding community engagement and facilitating platform features. It is not intended to be a financial product, security, investment, or currency. No part of this project constitutes a business, commercial activity, or investment offering under Indian law. We make no representations or guarantees regarding the token’s value, marketability, or future price and market performance of the token. This project is purely for research and educational purposes, and does not involve the solicitation of funds, investment advice, or any regulated financial services. The WMT token does not represent ownership, shares, or any financial interest in Wikimint or its affiliates. Users are advised to conduct their own research and consult financial or legal professionals before interacting with the token or participating in related activities. Use of this platform and token is at your own risk and are advised to comply with all local laws and regulations.</p>
+                        <a name="usecase"></a>
+
 </div>
       </div>
   </section>
@@ -79,6 +81,7 @@ noindex: false
                         <h3>Third-Party Integration (Coming Soon)</h3>
                         <hr/>
                         <p>Enable other platforms to use WMT for rewarding their own communities.</p>
+                        <a name="tokenomics"></a>
                     </div>
             </div>
       </div>
@@ -214,7 +217,7 @@ noindex: false
             <a href="https://www.linkedin.com/company/wikimintofficial" target="_blank" class="fs-4 text-dark">
               <i class="bi bi-linkedin"></i>
             </a>
-            <a href="https://github.com/wikimint" target="_blank" class="fs-4 text-dark">
+            <a href="https://github.com/wikimint/wmt" target="_blank" class="fs-4 text-dark">
               <i class="bi bi-github"></i>
             </a>
                  </div>
