@@ -132,7 +132,7 @@ noindex: false
 </table>
 
 <span class="badge text-bg-secondary fw-light mb-3">Contract Address</span>
-<code class="pre d-block fs-5 text-secondary"><a href="https://bscscan.com/token/0x4DDB10470dB0416DFe2A421c392CdA7965454267" target="_blank">0x4DDB10470dB0416DFe2A421c392CdA7965454267</a></code>
+<code class="pre d-block fs-5 text-secondary"><a href="https://bscscan.com/token/0x8274fc049f6d7c57df841ef3eacdf779f2ecd2b7" target="_blank">0x8274fc049f6d7c57df841ef3eacdf779f2ecd2b7</a></code>
 
 <h3 class="mt-5">Supply Cap & Circulation</h3>
 <hr/>
@@ -145,17 +145,10 @@ noindex: false
   </thead>
   <tbody>
     <tr>
-      <td>Maximum Supply Cap</td>
+      <td>Fixed Supply Cap</td>
       <td><span class="counter display-6 lead fw-bold" data-target="10000000">10000000</span> WMT</td>
     </tr>
-    <tr>
-      <td>Initial Circulating Supply</td>
-      <td><span class="counter display-6 lead fw-bold" data-target="100000">100000</span> WMT</td>
-    </tr>
-    <tr>
-      <td>Remaining Mintable</td>
-      <td><span class="counter display-6 lead fw-bold" data-target="9900000">990000</span> WMT</td>
-    </tr>
+
 
   </tbody>
 </table>
