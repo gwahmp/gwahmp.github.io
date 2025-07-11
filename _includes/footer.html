@@ -5,7 +5,12 @@
         <p>&copy; 2024 Wikimint. All rights reserved.</p><hr/>
         <a target="_blank" class="me-3" href="https://www.wikimint.com/p/about.html">About</a>
         <a target="_blank" class="me-3" href="https://www.wikimint.com/p/contact.html">Contact</a>
+        {% if site.data.config.name == 'wmt' %}
+        <a target="_blank" class="me-3" href="/wmt/legal">Legal</a>
+        <a target="_blank" class="me-3" href="/wmt/terms">Terms</a>  
+        {% else %}
         <a target="_blank" class="me-3" href="https://www.wikimint.com/p/legal.html#terms">Terms</a>
+        {% endif %}
         <a target="_blank" class="me-3" href="https://www.wikimint.com/p/legal.html#privacy">Privacy</a>
       </div>
     </div>
